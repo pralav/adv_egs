@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Overview | Generating Black-Box Adversarial Examples for Text Classifiers Using a Deep Reinforced Model</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Overview" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ECML-PKDD: Generating Black-Box Adversarial Examples for Text Classifiers Using a Deep Reinforced Model" />
+<meta property="og:description" content="ECML-PKDD:Generating Black-Box Adversarial Examples for Text Classifiers Using a Deep Reinforced Model" />
+<link rel="canonical" href="https://pralav.github.io/Video-SemNet/" />
+<meta property="og:url" content="https://pralav.github.io/adv_egs" />
+<meta property="og:site_name" content="adv_egs" />
+<script type="application/ld+json">
+{"name":"Adversarial Examples","description":"Generating Black-Box Adversarial Examples for Text Classifiers Using a Deep Reinforced Model","@type":"WebSite","url":"https://pralav.github.io/adv-egs","headline":"Overview","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/Video-SemNet/assets/css/style.css?v=0f45bab284ffadb553c5e68e45abfd2564884bf0">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="https://pralav.github.io/adv_egs/">Black-Box Adversarial Example Generation</a></h1>
+        
+        
+
+        <p>Using a Deep Reinforced Model</p>
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="overview">Overview</h2>
+
+<p> We propose a reinforcement learning based approach towards
+generating adversarial examples in black-box settings. We introduce a black-box non-targeted attack strategy by combining ideas of
+substitute network and adversarial example generation. We introduce an encoder-decoder that operates over words and characters of
+an input text and empowers the model to introduce word and character-level
+perturbations. We adopt a self-critical sequence training technique to train our model to
+generate examples that can fool or increase the probability of misclassification
+in text classifiers. We demonstrate that our method is able to fool well-trained models for (a) IMDB sentiment
+classification task and (b) AG’s news corpus news categorization task with
+significantly high success rates. We find that the adversarial examples
+generated are semantics-preserving perturbations to the original text. 
+</p>
+
+<p><img src="https://raw.githubusercontent.com/pralav/adv_egs/master/adv_eg.001.png" alt="Image" /></p>
+
+<h2 id="datasets">Datasets</h2>
+We first perform supervised pretraining using paraphrase datasets by randomly sampling parallel texts and augmenting them using simple character-transformations (eg. random insertion, deletion or replacement) to words in the text. We then use reforcement training specific to the dataset under consideration. The pretraining and evaluation datasets used in our work are listed below.
+
+    <ul>
+	<li> For Pre-training:<ul>
+      <li><a href="https://www.kaggle.com/c/quora-question-pairs/data">Quora Question Pairs Dataset</a></li>
+      
+
+      <li>Twitter URL paraphrasing corpus<a href="https://lanwuwei.github.io/Twitter-URL-Corpus/">Link 1</a> <a href="https://github.com/lanwuwei/Twitter-URL-Corpus"> Sample </a></li>
+      <li> <a href="https://github.com/jwieting/para-nmt-50m">ParaNMT-50 Dataset</a></li>
+        </ul>
+	<li> For Evaluation:<ul>
+        <li><a href="https://ai.stanford.edu/~amaas/data/sentiment/">IMDB Sentiment Dataset</a> </li>
+        <li><a href="https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv">AG's News Corpus</a></li>
+        </ul>
+      </li>
+  
+</ul>
+        
+
+
+
+
+<h2 id="contact">Contact</h2>
+
+<p>Have a question or comment? Please contact me at pralav [at] media [dot] mit [dot] edu</p>
+<small> The code for this work is part of another project and can't be released currently. We will be releasing the code after the other project is complete.</small>
+
+      </section>
+      <footer>
+        
+        <p>This research project is part of the  
+         <a href="https://www.media.mit.edu/groups/social-machines/overview/">Laboratory for Social Machines</a> at the MIT Media Lab</p>
+        
+      </footer>
+    </div>
+    <script src="/Video-SemNet/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
