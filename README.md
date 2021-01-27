@@ -7,6 +7,7 @@ This repo is related to the project page of the paper ["Generating Black-Box Adv
 
 
 Project Page and the associated data can be accessed [here](https://pralav.github.io/adv_egs/?c=12).
+
 Presentation Slides can be accessed [here](/ecml_talk.pdf)
 
 ![Image](/adv_egs.001.png)
